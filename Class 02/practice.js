@@ -1,0 +1,10 @@
+const list1 = React.createElement('li',{className:'font-bold text-3xl'},"HOME")
+const list2 = React.createElement('li',{className:'font-bold text-3xl'},"ABOUT")
+const list3 = React.createElement('li',{className:'font-bold text-3xl'},"PRODUCT")
+const list4 = React.createElement('li',{className:'font-bold text-3xl'},"SERVICE")
+const list5 = React.createElement('li',{className:'font-bold text-3xl'},"CONTACT")
+const undorderlist = React.createElement('ul',{className:'flex justify-center items-center gap-10 p-15 text-white'},[list1,list2,list3,list4,list5])
+const div = React.createElement('div',{className:'bg-red-600'},[undorderlist])
+const root = ReactDOM.createRoot(document.querySelector('#root'))
+
+root.render(div)
