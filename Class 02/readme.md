@@ -1,0 +1,1 @@
+<!-- react or reactdom isliye alg rkha h kyuki reactDom ko react native m bhi use krte h  -->
