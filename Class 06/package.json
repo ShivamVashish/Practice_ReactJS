@@ -1,13 +1,14 @@
 {
   "name": "class-05",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "<!-- JSX ke andr hm javascript ke andr expression likh skte h but statement nhi add kr skte jsx ke andr object ko bhi directly full nhi access kr skte uski value kr skte h bss \r Example : String , Number , Array ye kuch bhi ho ye agree h iske andr if else hi condition nhi likh skte \r array ko full access kr skti h but array ke andr object daal dia usko nhi dekh paygi \r arr = [20,40,\"Shivam\",10] == agree",
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
     "parcel": "^2.16.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
