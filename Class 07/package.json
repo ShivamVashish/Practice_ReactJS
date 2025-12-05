@@ -1,12 +1,15 @@
 {
   "name": "class-07",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- Without use state hmara sirf count console m hoga yah pr nhi show yha show krna ke liye use state use krna hoga mujhe \r Script wali file m dom ko manupulate krna pd rha h or kay asa sbhi ke liye krna hoga ye achi habit nhi h \r react hi hmare khud se ache dom ko manupulate krta h isliye mne unhe ache se shop dia h",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.16.1",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

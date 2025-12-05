@@ -7,21 +7,21 @@ import arr from "./utils/dummy";
 
 // console.log(arr);
 function App() {
-  const [data,setdata] = useState(arr)
-  function sortArray(){
-    const sorted = [...data].sort((a,b)=>a.price-b.price)
-    setdata(sorted)
+ let [Data,setData] = useState(arr)
+  function sortarrray(){
+    let sorted = [...Data].sort((a,b)=>a.price-b.price);
+    setData(sorted)
   }
-  function priceabove500(){
-   const B =  arr.filter((value)=>value.price>1009)
-   setdata(B)
+  function filter(){
+   let filtering =  arr.filter(item=>item.price>700)
+   setData(filtering)
   }
  return (
    <div>
      <Header />
-     <button className="bg-black p-1 text-white font-bold" onClick={sortArray}>Sort By Price</button>
-     <button className="bg-black p-1 text-white font-bold" onClick={priceabove500}>Price Above 499</button>
-     {data.map((value, index) => (
+     <button className="bg-black p-1 text-white font-bold" onClick={sortarrray}>Sort By Price</button>
+     <button className="bg-black p-1 text-white font-bold" onClick={filter}>Price Above 499</button>
+     {Data.map((value, index) => (
        <Card key={index}
          cloth={value.cloth}
          Offer={value.Offer}
