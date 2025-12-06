@@ -19,3 +19,14 @@ Side-effect matlab UI ke bahar ka kaam jo render ke saath directly nahi hota
 Note : UseEffect wala hooks hmara sbse last m run hota h jo hm iske andr instruction denge wo sbse last m run hogi jb clege ye upr wala code bhi run ho jayga niche wala bhi tb ye clega 
 
 agr hme useEffect hooks ki dependencies empty h to ye hooks kbhi nhi clega but agr iske andr mne value dali h to m chahta hu ki jb bhi usss valeu m kuch bhi change ho to call back function phir se run ho dependencies agr empty to normally ek bar hi clega bss ye or agr dependencies array nhi dia to phir to ye har bar clega 
+
+
+React.memo(Colorful): Hooks Iss hooks ne ab ye apne parent ko khud bol dega ki jo tere andr changes ho rhe h wo mere andr leker mt aa first tym to run hoga kyuki jb run hi nhi hoga to show kse hoga but ye h phir jb bhi uske parent ke andr changes hoge phir uske andr effect nhi pdega 
+
+React.memo ka means yhi h ki mujhe memorize krdo mere pe effect nhi pd rha React.memo tbhi use kre jb hme lge ki hmare parent ke upr bht sare changes hore h 
+
+agr hmare React.memo ke andr bar bar re-render hoga or change hoga to phir usko render krna pdega phir ye apne colorful wale funciton ko render krayga 
+
+React.memo hme allow krta h agr hmare props change hore h to wo bar bar hme function run krne dega 
+
+agr koi parent ke andr bht sare change hore h to hme apne children ko safe krne ke liye React.memo use krna pdega 
