@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 
 function Passwordgenerator() {
@@ -6,8 +6,9 @@ function Passwordgenerator() {
   const [length, setLength] = useState(5);
   const [numbers, setNumbers] = useState(false);
   const [characters, setCharacters] = useState(false);
-    function generatepassowrd(){
-        let str = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+ const generatepassowrd =  useCallback(()=>{
+    let str = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
         if(numbers){
             str+= '0123456789'
             if(characters){
@@ -19,10 +20,10 @@ function Passwordgenerator() {
             pass+= str[Math.floor(Math.random()*str.length)]
         }
         setPassword(pass)
-    }
+  },[generatepassowrd])
    useEffect(()=>{
     generatepassowrd()
-   },[length])
+   },[length,numbers,characters])
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center p-6">
       <div className="bg-gray-900 p-8 rounded-2xl shadow-2xl w-full max-w-md text-white">

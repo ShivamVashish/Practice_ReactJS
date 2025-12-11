@@ -1,14 +1,11 @@
 {
   "name": "class-09",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "<!-- Closure\r A lexical scope means in JavaScript, an inner function can access the variables of its outer function,\r but the outer function cannot access the variables of the inner function. This behavior is called lexical scope.\r -->\r <!-- function outer() {\r   let a = 10;   // outer variable\r   function inner() {\r     console.log(a);  // inner → outer (YES)\r   }\r   inner();\r   console.log(b);  // outer → inner (NO ❌)\r }\r function outer() {\r   let a = 10;   // outer variable\r   function inner() {\r     let b = 20; // inner variable\r     console.log(a);  // inner → outer (YES)\r   }\r   inner();\r   console.log(b);  // ❌ ERROR: b is not defined\r }\r outer(); -->",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.16.1",
+    "parcel": "^2.16.3",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   }
