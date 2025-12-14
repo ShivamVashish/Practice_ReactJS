@@ -12,3 +12,4 @@ Use State : useState is a React Hook that allows you to add state to functional 
 It returns an array with two values: the current state value and a function to update that state. When the state updates, React automatically re-renders the UI. ->
 
 JO isme funciton hota h state m jo ye retunr krta h wo kya krta h wo hmare funciton ko phir se call krta h tbhi ye update jo hota h tbhi ye show hota h updated value jo updated value hoti h wo use state ki value ko overwrite kr deti h or change ho jati h jb bhi kuch bhi change hota h wo fucntion phir se call krta h main function ko 
+
