@@ -1,7 +1,7 @@
 {
   "name": "class-11",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- 🔹 Easy Interview Lines -->\r <!-- \r useState → “Stores data for UI and updates component when state changes.”",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

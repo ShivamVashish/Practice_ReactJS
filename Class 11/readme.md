@@ -8,3 +8,4 @@ useCallback → “Remembers a function, so it won’t be recreated unless neede
 
 useMemo → “Remembers a calculated value, recalculates only if needed.” 
 
+useRef : 
